@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<title>判断手机端和pc端</title>  
+<script type="text/javascript" src="jquery-1.10.1.min.js"></script>  
+<script type="text/javascript">  
+<!--判断手机端和pc端-->  
+(function () {  
+    var sUserAgent = navigator.userAgent;  
+    if (sUserAgent.indexOf('Android') > -1 || sUserAgent.indexOf('iPhone') > -1 || sUserAgent.indexOf('iPad') > -1 || sUserAgent.indexOf('iPod') > -1 || sUserAgent.indexOf('Symbian') > -1) {  
+        location.href = 'http://m.onestopweb.cn/';              
+    } else {  
+        //location.href = 'http://www.onestopweb.cn/';    
+    }          
+})();   
+</script>  
+</head>  
+<body>  
+</body>  
+</html> 

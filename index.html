@@ -4,29 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
   <script type="text/javascript">
-   function browserRedirect() {
-   var sUserAgent = navigator.userAgent.toLowerCase();
-   var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-   var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-   var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-   var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-   var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-   var bIsAndroid = sUserAgent.match(/android/i) == "android";
-   var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-   var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-   if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-   //跳转移动端页面
-   window.location.href="http://f.jcngame.com/fanfan20171208/mobile/index.html" rel="external nofollow" rel="external nofollow" ;
-   } else {
-   //跳转pc端页面
-   window.location.href="./pc/index.html" rel="external nofollow" rel="external nofollow" ;
-   }
-  }
-   browserRedirect(); 
+   function is_phone(){ 
+    var os = new Array("Android","iPhone","Windows Phone","iPod","BlackBerry","MeeGo","SymbianOS");      
+    var info = navigator.userAgent;
+    var len = os.length; 
+    for (var i = 0; i < len; i++) {
+        if (info.indexOf(os[i]) > 0){
+            return true;
+        }
+    }
+    return false;
+}
+// 检测是手机端
+ 
   </script>
  </head>
  <body>
-  
+     <script>
+        if(is_phone()==false){ 
+            window.location ="./pc/index.html"; 
+        }
+        else{
+            window.location ="./mobile/index.html"
+        }
+
+     </script>
  </body>
 </html>
 
