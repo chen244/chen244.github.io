@@ -1,29 +1,97 @@
+<!DOCTYPE html>
 <html>
-<style>
-    body {
-        background-color: #2a203a;
-    }
-    
-    h1 {
-        color: orange;
-        text-align: center;
-    }
-    
-    p.center {
-        font-family: "Times New Roman";
-        font-size: 20px;
-        text-align: center;
-    }
-</style>
 
 <head>
-    <title>我是猪
-    </title>
+    <meta charset="utf-8">
+    <title>星火商店</title>
+
+    <link rel="stylesheet" href="./states/css/style.css">
+    <script>
+        function jump() {
+            window.location.href = "http://blog.sina.com.cn/mleavs";
+        }
+    </script>
+
 </head>
 
 <body>
-    <h1>尝试</h1>
-    <p class="center"> &nbsp 尝试</p>
+    <div id="header" class="static">
+        <ul>
+            <li class="top-logo"><a href="index.html">Spark store</a></li>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="https://www.deepinos.org">博客</a></li>
+            <li><a href="https://www.deepinos.org">论坛</a></li>
+            <li><a href="about.html">关于</a></li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <ul>
+        <li class="top-logo"><a href="index.html">Spark store</a></li>
+        <div class="dropdown2">
+            <button class="dropbtn"><a>More</a></button>
+            <div class="dropdown-content">
+            <a href="index.html">主页</a>
+            <a href="https://www.deepinos.org">博客</a>
+            <a href="https://www.deepinos.org">论坛</a>
+            <a href="about.html">关于</a>
+            </div>
+        </div>
+        </ul>
+    </div>
+    <div id="container" class="get_the_top" style="width:100%">
+        <table width="100%" border="0">
+            <tr>
+                <td style="background-image:url('./states/img/波纹0.svg');
+                           background-size:cover;
+                           background-repeat:no-repeat;">
+                    <center>
+                        <h1>
+                            <p class="title" style="margin-top:0px;">Spark Store</p>
+                            <p class="title2">指尖一触，即是万物</p>
+                        </h1>
+                        <div>
+                            <button class="button button1" onclick="jump()"><span>了解更多</span></button>
+                            <br>
+                            <button class="button button1" onclick="jump()"><span>下载体验</span></button>
+                        </div>
+                    </center>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="center">
+    <div class="pos_down">
+        <div class="center">
+            <img src="./states/img/小红点.svg"></img><font size="6" color="gray">开源社区的</font><font size="6" color=black>自由</font><br>
+            <font size="4">从客户端到服务端，<br>代码全部开源，自由修改</font>    
+        </div>
+    </div>
+    <div class="pos_down">
+        <div class="center">
+            <img src="./states/img/小红点.svg"></img>&nbsp;&nbsp;<font size="6" color="gray">简约美观的<font color="black">界面</font></font>
+            <br><font size="4">dtk 5 开发，毛玻璃侧栏，<br>
+                            给您简约优雅的体验。</font>
+        </div>
+    </div>       
+    <div class="pos_down2">
+        <div class="center2"><img src="./states/img/小红点.svg"></img><font size="6" color="gray">丰富多样的<font color="black">应用</font></font>
+            <br>
+            社区收集，真人审核与上架,<br>
+            多而可控的应用存储</div>
+    </div>
+    </div>
+    <div class="bottom">
+        <center>
+            <font size="6" color="gray">下载<font color="black">Spark Store</font></font>
+            <div>
+                <button class="button button1" onclick="jump()"><span>下载最新版</span></button>
+                    <br>
+                <button class="button button1" onclick="jump()"><span>下载源代码</span></button>
+            </div>
+        </center>
+    </div>
+
 </body>
 
 </html>
