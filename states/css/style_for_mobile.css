@@ -24,7 +24,7 @@ li a {
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 40px 40px;
     text-decoration: none;
 }
 
@@ -41,8 +41,8 @@ li a:hover:not(.active) {
 .dropbtn {
     background-color: #ffffffce;
     color: black;
-    padding: 16px;
-    font-size: 16px;
+    padding: 40px;
+    font-size: 40px;
     border: none;
     cursor: pointer;
     float:right;    
@@ -64,7 +64,7 @@ li a:hover:not(.active) {
 .dropdown-content {
     display: none;
     position: fixed;
-    top:50px;
+    top:70px;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -93,13 +93,13 @@ li a:hover:not(.active) {
 /* 下拉菜单 */
 .title {
     font-family: 'Light';
-    font-size: 80px;
+    font-size: 160px;
     margin:0;
 }
 
 .title2 {
     font-family: "light";
-    font-size: 25px;
+    font-size: 70px;
     margin: 0;
     color: rgb(80, 80, 80);
     margin-top: 1rem;
