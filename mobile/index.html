@@ -10,11 +10,28 @@
         function jump(temp) {
             window.location.href = temp;
         }
+        function is_phone(){ 
+            var os = new Array("Android","iPhone","Windows Phone","iPod","BlackBerry","MeeGo","SymbianOS");      
+            var info = navigator.userAgent;
+            var len = os.length; 
+            for (var i = 0; i < len; i++) {
+                if (info.indexOf(os[i]) > 0){
+                    return true;
+                }
+            }
+            return false;
+        }
+
     </script>
 
 </head>
 
 <body>
+     <script>
+        if(is_phone()==false){ 
+            window.location ="../pc/index.html"; 
+        }
+     </script>
     <div class="dropdown">
         <ul>
         <li class="top-logo"><a href="index.html">Spark store</a></li>
