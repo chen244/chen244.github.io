@@ -7,14 +7,30 @@
 
     <link rel="stylesheet" href="../states/css/style.css">
     <script>
-        function jump() {
-            window.location.href = "http://blog.sina.com.cn/mleavs";
+        function jump(temp) {
+            window.location.href = temp;
+        }
+        function is_phone(){ 
+            var os = new Array("Android","iPhone","Windows Phone","iPod","BlackBerry","MeeGo","SymbianOS");      
+            var info = navigator.userAgent;
+            var len = os.length; 
+            for (var i = 0; i < len; i++) {
+                if (info.indexOf(os[i]) > 0){
+                    return true;
+                }
+            }
+            return false;
         }
     </script>
 
 </head>
 
 <body>
+     <script>
+        if(is_phone()==true){ 
+            window.location ="../mobile/index.html"; 
+        }
+    </script>
     <div id="header" class="static">
         <ul>
             <li class="top-logo"><a href="index.html">Spark store</a></li>
@@ -50,9 +66,9 @@
                             <p class="title2">指尖一触，即是万物</p>
                         </h1>
                         <div>
-                            <button class="button button1" onclick="jump()"><span>了解更多</span></button>
+                            <button class="button button1" onclick="jump('about.html')"><span>了解更多</span></button>
                             <br>
-                            <button class="button button1" onclick="jump()"><span>下载体验</span></button>
+                            <button class="button button1" onclick="jump('about.html')"><span>下载体验</span></button>
                         </div>
                     </center>
 
