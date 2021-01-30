@@ -9,7 +9,7 @@ body{
     background:#efefef;
 }
 .p_font{
-    font-size: 30px;
+    font-size: 32px;
 }
 ul {
     font-size: 60px;
@@ -180,7 +180,7 @@ div.pos_down
     position:relative;
     top:80px;
     width:100%;
-    height:900px;
+    height:1100px;
     float:left;
 }
 @keyframes bigger{
@@ -197,7 +197,7 @@ div.center_all
     width: 90%;
     height: 100%;
     margin: 0 auto;
-    top:20%;
+    top:100px;
 
 }
 
