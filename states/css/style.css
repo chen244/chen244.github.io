@@ -6,7 +6,7 @@
     src: url("../fonts/Comfortaa-Light.ttf")
 }
 body{ 
-    background:#efefef;
+    background:#f3eff399;
 }
 audio{
     z-index:4;
@@ -206,7 +206,7 @@ div.pos_down_top2
     position:relative;
     top:70px;
     width:100%;
-    height:100px;
+    height:60px;
     float:left;
 }
 .pos_down_top:after {
@@ -224,10 +224,10 @@ div.pos_down_top2
     content: '';
     position: absolute;
     top: 2%;
-    left: 33%;
-    right: 33%;
+    left: 40%;
+    right: 40%;
     bottom: 2%;
-    border-radius:10px;
+    border-radius:30px;
     background-color: rgba(255,255,255,1);
     z-index: 2;
 }
@@ -244,7 +244,7 @@ div.pos_down
     position:relative;
     top:5px;
     width:50%;
-    height:400px;
+    height:480px;
     float:left;
 }
 .pos_down:after {
@@ -261,9 +261,9 @@ div.pos_down
 div.pos_down_3
 {
     position:relative;
-    top:20px;
+    top:5px;
     width:100%;
-    height:900px;
+    height:1000px;
     float:left;
 }
 .pos_down_3:after {
@@ -274,7 +274,7 @@ div.pos_down_3
     right: 2%;
     bottom: 4%;
     border-radius:25px;
-    background-color: rgba(225,225,225,0.6);
+    background-color: rgba(255,255,255,0.6);
     z-index: 2;
 }
 
@@ -294,7 +294,7 @@ div.pos_down_2
     right: 2%;
     bottom: 4%;
     border-radius:25px;
-    background-color: rgba(200,200,200,0.7);
+    background-color: rgba(255,255,255,0.7);
     z-index: 2;
 }
 div.center_all
@@ -358,16 +358,15 @@ div.center2
         position:relative;
         top:10px;
         width:100%;
-        height:300px;
+        height:540px;
         float:left;
-        left:20px;
     }
     div.pos_down_inside
     {
         position:relative;
         top:70px;
         width:100%;
-        height:300px;
+        height:500px;
         float:left;
         left:20px;
     }
@@ -376,23 +375,21 @@ div.center2
         position:relative;
         top:20px;
         width:100%;
-        height:1400px;
+        height:2400px;
         float:left;
-        left:20px;
     }
     div.pos_down_2
     {
         position:relative;
-        top:10px;
+        top:20px;
         width:100%;
-        height:600px;
+        height:500px;
         float:left;
-        left:20px;
     }
 
     div.center{
         width: 80%; 
-        height: 100px; 
+        height: 200px; 
         margin: 0 auto;
         z-index:4;
     }
@@ -409,6 +406,16 @@ div.center2
         top:5px;
         width:100%;
         height:600px;
+        float:left;
+    }
+}
+@media screen and (max-width: 600px){
+    div.pos_down
+    {
+        position:relative;
+        top:10px;
+        width:100%;
+        height:450px;
         float:left;
     }
 }

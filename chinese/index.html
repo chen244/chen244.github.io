@@ -33,11 +33,14 @@
         }
     </script>
 
-    <div id="app">
     <div id="header" class="static">
         <ul>
             <li class="top-logo"><a href="index.html">Spark store</a></li>
-            <li v-for="item in url"><a :href="item.location">{{item.name}}</a></li>
+            <!--<li v-for="item in url"><a :href="item.location">{{item.name}}</a></li>-->
+            <li><a href="index.html">主页</a></li>
+            <li><a href="https://www.deepinos.org">博客</a></li>
+            <li><a href="https://www.deepinos.org">论坛</a></li>
+            <li><a href="about.html">关于</a></li>
         </ul>
     </div>
     <div class="dropdown">
@@ -46,7 +49,10 @@
         <div class="dropdown2">
             <button class="dropbtn" ><a>More</a></button>
             <div class="dropdown-content">
-                <a  v-for="item in url" :href="item.location">{{item.name}}</a>
+                <a href="index.html">主页</a>
+                <a href="https://www.deepinos.org">博客</a>
+                <a href="https://www.deepinos.org">论坛</a>
+                <a href="about.html">关于</a>
             </div>
         </div>
         </ul>
@@ -65,7 +71,7 @@
                         </h1>
                         <div>
                             <br>
-                            <button class="button button1" onclick="jump('#download')"><span>{{name}}</span></button>
+                            <button class="button button1" onclick="jump('#download')"><span>下载</span></button>
                         </div>
                     </center>
 
@@ -187,15 +193,13 @@
 
 你的浏览器不支持video元素
 
-</audio>
+            </audio>
         </div>
     </div>
     </div>
 
-    </div>
 
 
-        <script src="change_language.js"></script>
 </body>
 
 </html>

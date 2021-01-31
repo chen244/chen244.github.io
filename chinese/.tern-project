@@ -1,0 +1,16 @@
+{
+ "libs": [
+  "vue",
+  "browser",
+  "vue-router"
+   ],
+  "loadEagerly": [
+   "importantfile.js"
+   ],
+  "plugins": {
+   "requirejs": {
+    "baseURL": "./",
+    "paths": {}
+   }
+  }
+}
