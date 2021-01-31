@@ -6,7 +6,7 @@
     src: url("../fonts/Comfortaa-Light.ttf")
 }
 body{ 
-    background:#000000;
+    background:#efefef;
 }
 audio{
     z-index:4;
