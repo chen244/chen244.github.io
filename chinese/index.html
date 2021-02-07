@@ -10,27 +10,12 @@
         function jump(temp) {
             window.location.href = temp;
         }
-        /*function is_phone(){ 
-            var os = new Array("Android","iPhone","Windows Phone","iPod","BlackBerry","MeeGo","SymbianOS");      
-            var info = navigator.userAgent;
-            var len = os.length; 
-            for (var i = 0; i < len; i++) {
-                if (info.indexOf(os[i]) > 0){
-                    return true;
-                }
-            }
-            return false;
-        }*/
+
     </script>
 
 </head>
 
 <body>
-    <!--<script>
-        if(is_phone()==true){ 
-            window.location ="../mobile/index.html"; 
-        }
-    </script>-->
 
     <div id="header" class="static">
         <ul>
@@ -98,7 +83,7 @@
         <div class="center">
             <img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;开源社区的</font><font size="6" color=black>自由</font><br>
             <p class="p_font">从客户端到服务端，<br>代码全部开源，自由修改</p>
-            <img src="../states/img/one.png" width=80%></img>
+            <img class="picture" src="../states/img/one.png"></img>
         </div>
     </div>
     <div class="pos_down">
@@ -106,7 +91,7 @@
             <img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;简约美观的<font color="black">界面</font></font>
             <br><p class="p_font">dtk 5 开发，毛玻璃侧栏，<br>
                             给您简约优雅的体验。</p>
-            <img src="../states/img/two.png" width=80%></img>
+            <img class="picture" src="../states/img/two.png"></img>
         </div>
     </div>       
     <div class="pos_down">
@@ -114,7 +99,7 @@
             <br>
             <p class="p_font">社区收集，真人审核与上架,<br>
                 多而可控的应用存储</p>
-            <img src="../states/img/four.png" width=80%></img>
+            <img class="picture" src="../states/img/four.png"></img>
         </div>
     </div>
     <div class="pos_down">
@@ -122,7 +107,7 @@
             <br>
             <p class="p_font">这里有你的位置<br>
                 来发挥你的才能吧</p>
-            <img src="../states/img/three.png" width=80%></img>
+            <img class="picture" src="../states/img/three.png"></img>
         </div>
     </div>
     <div class="pos_down_2">
@@ -134,7 +119,7 @@
         </div>
     </div>
      <div id="download" class="pos_down_3">
-        <div class="center">
+        <div class="center3">
             <img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;deepin<font color="black">下载</font></font>
             <br>
         </div>
@@ -145,7 +130,8 @@
             <p>
                 deepin下载这里<br>
             </p>
-            <img src="../states/img/linux.png" width=70%></img>
+            <img src="../states/img/linux.png" width=40%></img>
+            <br>
                 <button class="button button1" onclick="jump('#download')"><span>下载体验</span></button>
         </div>
         </div>
@@ -157,7 +143,8 @@
                     依赖补充下载<br>
                 </p>
 
-                <img src="../states/img/debian.png" width=70%></img>
+                <img src="../states/img/debian.png" width=40%></img>
+                <br>
                 <button class="button button1" onclick="jump('#download')"><span>获取依赖</span></button>
             </div>
         </div>
@@ -183,7 +170,7 @@
         </div>
 
     </div>
-    <div class="pos_down_2">
+    <div class="pos_down_4">
         <div class="center">
             <img src="../states/img/小红点.svg"></img><font size="6" color="gray">&nbsp;&nbsp;要洽饭<font color="black">的嘛</font></font>
             <br>
