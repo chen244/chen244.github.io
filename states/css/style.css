@@ -362,7 +362,6 @@ div.center2
     height: 100px;
     margin: 0 auto;
     z-index:4;
-    left:4%;
 }
 @media screen and (max-width: 800px){
     div.center_all
