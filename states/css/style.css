@@ -8,7 +8,7 @@
 html,body{
     width: 100%;
     height: 100%;
-    background:rgba(240, 240, 240, 0.7);
+    background:rgba(230, 230, 230, 0.7);
     margin: 0px;
 }
 audio{
@@ -115,7 +115,7 @@ li a:hover:not(.active) {
     margin:0;
 }
 .picture{
-    width:80%;
+    width:90%;
 }
 .title2 {
     font-family: "light";
@@ -167,7 +167,9 @@ li a:hover:not(.active) {
     opacity: 1;
     right: 0;
 }
-
+    .picture{
+        width:70%;
+    }
 .button1 {
     border-radius: 12px;
     font-family:'Light';
@@ -400,6 +402,7 @@ div.center2
     }
     div.pos_down_2
     {
+        top:0px;
         position:relative;
         width:100%;
         height:500px;
